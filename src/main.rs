@@ -12,6 +12,7 @@ const DATABASE_URL: &str = "mysql://root:wkqdmm@192.168.6.173:3306";
 const DB_NAME: &str = "sea_orm_test";
 
 
+//TODO 通过mod导入
 //获取数据库连接池
 async fn get_db_connection() -> Result<DatabaseConnection, DbErr> {
     let url = format!("{}/{}", DATABASE_URL, DB_NAME);
